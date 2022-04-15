@@ -1,0 +1,94 @@
+.contenedor {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #cfcfcf;
+}
+
+.calculadora {
+  width: 400px;
+  height: 600px;
+  border-radius: 30px;
+  background: #e0e0e0;
+  box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff;
+}
+
+/*Display Styles*/
+.display {
+  background-color: #c0c0c0;
+  height: 100px;
+  width: 350px;
+  margin-left: 25px;
+  margin-top: 20px;
+  aspect-ratio: 1;
+  border-radius: 20%;
+  box-shadow: inset 5px 5px 3px #a9a9aa, inset -5px -5px 3px #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.valores {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: monospace;
+  color: rgb(0, 0, 0);
+  overflow: hidden
+}
+
+.resultado {
+  margin-right: 10px;
+  font-size: 50px;
+
+}
+
+/*contenedor botones*/
+#container-btn {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: repeat(5, 80px);
+  justify-items: center;
+  align-items: center;
+}
+
+/* Button Styles */
+button {
+  width: 60px;
+  height: 60px;
+  color: #000000;
+  padding: 2px;
+  background: #e0e0e0;
+  border: 1px solid #e8e8e8;
+  transition: all 0.3s;
+  box-shadow: 5px 5px 12px #898989, -5px -5px 12px #ffffff;
+  border-radius: 22px;
+}
+
+button:active {
+  color: #666;
+  box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
+}
+
+/*Botones re-organizados*/
+#sumar {
+  grid-column-start: 4;
+  grid-row: 2/4;
+  height: 150px;
+}
+
+#cero {
+  grid-column: 1/3;
+  width: 150px;
+}
+
+#igual {
+  grid-column-start: 4;
+  grid-row-start: 4;
+  grid-row: 4/6;
+  height: 150px;
+}
